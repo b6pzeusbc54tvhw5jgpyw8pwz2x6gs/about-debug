@@ -7,7 +7,7 @@
 ### 3. Connect your PC and Phone using USB cable. If your phone want to confirm about some permission, please allow it.
 
 ### 4. Download ADB(Android Debug Bridge) in [official Android website][official_android_website]
-- Yo4 can also use below direct download link:
+- You can also use below direct download link:
 - For Windows: https://dl.google.com/android/repository/platform-tools-latest-windows.zip
 - For MAC: https://dl.google.com/android/repository/platform-tools-latest-darwin.zip
 - For Linux: https://dl.google.com/android/repository/platform-tools-latest-linux.zip
