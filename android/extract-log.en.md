@@ -12,9 +12,9 @@
 - For MAC: https://dl.google.com/android/repository/platform-tools-latest-darwin.zip
 - For Linux: https://dl.google.com/android/repository/platform-tools-latest-linux.zip
 
-### 5. On your PC, Decompress a downloaded zip file into `c:\adb` directory. You can use another directory name. We call that directory `working directory`
+### 5. On your PC, Decompress a downloaded zip file into `c:\adb` directory. You can use another directory name. There may be subdirectories where adb.exe is located, we call that directory `working directory`
 
-### 6. On your PC, From `My Computer` move to the working directory where the adb.exe file is located. (maybe `c:\adb\platform-tools`). `<shift + mouse right button>` to open context menu, then select 'Open command window here'
+### 6. On your PC, From `Computer` icon move to the working directory where the adb.exe file is located. (maybe `c:\adb\platform-tools`). `<shift + mouse right button>` to open context menu, then select 'Open command window here'
 
 ### 7. On command window, run below commands line by line to verify your phone is properly connected.
 ```

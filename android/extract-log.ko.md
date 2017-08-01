@@ -12,9 +12,9 @@
 - For MAC: https://dl.google.com/android/repository/platform-tools-latest-darwin.zip
 - For Linux: https://dl.google.com/android/repository/platform-tools-latest-linux.zip
 
-### 5. PC 에서, 다운로드받은 zip 파일을 `c:\adb` 폴더에 압축해제. 원하면 다른 이름을 쓸 수 있다. 이 디렉토리를 워킹 디렉토리라 부르자
+### 5. PC 에서, 다운로드받은 zip 파일을 `c:\adb` 폴더에 압축해제. 다른 이름을 사용해도 된다. `adb.exe` 파일이 있는 하위 디렉토리가 있는데 이 디렉토리를 `워킹 디렉토리`라 부르자
 
-### 6. PC 에서, `adb.exe` 파일이 위치한 워킹 디렉토리까지 `내 컴퓨터`를 통해 이동한다. `<shift+mouse 우측버튼>` 으로 컨텍스트 메뉴를 열고 '여기서 명령창 열기' 실행
+### 6. PC 에서, `adb.exe` 파일이 위치한 `워킹 디렉토리`까지 `내 컴퓨터`를 통해 이동한다. `<shift+mouse 우측버튼>` 으로 컨텍스트 메뉴를 열고 '여기서 명령창 열기' 실행
 
 ### 7. 명령창에서, 다음의 명령어들을 한줄씩 실행하여 Phone 연결을 확인
 ```
@@ -33,7 +33,7 @@ List of devices attached
 FAXXXXXXXX18    device
 ```
 
-- 연결이 잘 되지 않을 경우, adb 드라이버를 설치해야한다. [Universal Adb Driver][universal_adb_driver] 를 사용하자.
+- 연결이 잘 되지 않을 경우, adb 드라이버를 설치해야함. [Universal Adb Driver][universal_adb_driver] 를 사용하자.
 
 ### 8. 명령창에서, 플랫폼의 정보를 `prop.txt` 파일로 추출하기 위해 아래 명령어 수행
 
