@@ -12,11 +12,11 @@
 - For MAC: https://dl.google.com/android/repository/platform-tools-latest-darwin.zip
 - For Linux: https://dl.google.com/android/repository/platform-tools-latest-linux.zip
 
-### 5. PC 에서, 다운로드받은 zip 파일을 `c:\adb` 폴더에 압축해제. 다른 이름을 사용해도 된다. `adb.exe` 파일이 있는 하위 디렉토리가 있는데 이 디렉토리를 `워킹 디렉토리`라 부르자.
+### 5.1. PC 에서, 다운로드받은 zip 파일을 압축해제. `내 컴퓨터`를 통해 `adb.exe` 파일이 있는 `platform-tools` 디렉토리까지 이동하자.
 
-### 6. PC 에서, `adb.exe` 파일이 위치한 `워킹 디렉토리`까지 `내 컴퓨터`를 통해 이동한다. `<shift+mouse 우측버튼>` 으로 컨텍스트 메뉴를 열고 '여기서 명령창 열기' 실행.
+### 5.2. `<shift+mouse 우측버튼>` 으로 컨텍스트 메뉴를 열고 '여기서 명령창 열기' 실행.
 
-### 7. 명령창에서, 다음의 명령어들을 한줄씩 실행하여 Phone 연결을 확인.
+### 6. 명령창에서, 다음의 명령어들을 한줄씩 실행하여 Phone 연결을 확인.
 ```
 adb version
 adb devices
@@ -25,28 +25,28 @@ adb devices
 - 연결까지 잘 되었을 경우 아래와 같은 결과가 나옴
 
 ```
-C:\워킹디렉토리> adb version
+C:\platform-tools> adb version
 Android Debug Bridge version 1.0.31
 
-C:\워킹디렉토리> adb devices
+C:\platform-tools> adb devices
 List of devices attached
 FAXXXXXXXX18    device
 ```
 
 - 연결이 잘 되지 않을 경우, adb 드라이버를 설치해야함. [Universal Adb Driver][universal_adb_driver] 를 사용하자.
 
-### 8. Phone 에서, 문제 되었던 현상 재현 하기.
+### 7. Phone 에서, 문제 되었던 현상 재현 하기.
 
-### 9. 명령창에서, 로그를 추출하기위해 8번 수행 후 즉시 다음 명령어를 한줄씩 실행.
+### 8. 명령창에서, 로그를 추출하기위해 8번 수행 후 즉시 다음 명령어를 한줄씩 실행.
 
 ```
-c:\워킹디렉토리> adb logcat -d -v time > log1.txt
-c:\워킹디렉토리> adb shell getprop > prop.txt
+c:\platform-tools> adb logcat -d -v time > log1.txt
+c:\platform-tools> adb shell getprop > prop.txt
 ```
 
-### 10. `log1.txt`, `prop.txt` 파일들을 담당자에게 전달.
+### 9. `platform-tools` 디렉토리안에 생성된 `log1.txt`, `prop.txt` 파일들을 담당자에게 전달.
 
-> 만약 여러번의 로그추출이 필요하면, log1.txt 파일이름을 `log2.txt` 파일과 같이 변경해가면서 8번~9번을 반복실행
+> 만약 여러번의 로그추출이 필요하면, log1.txt 파일이름을 `log2.txt` 파일과 같이 변경해가면서 7번~8번을 반복실행
 
 [official_android_website]: https://developer.android.com/studio/releases/platform-tools.html
 [universal_adb_driver]: https://github.com/b6pzeusbc54tvhw5jgpyw8pwz2x6gs/about-debug/raw/master/android/universaladbdriver_v4.0.zip
