@@ -37,7 +37,7 @@ FAXXXXXXXX18    device
 
 ### 8. On your phone, reproduce your error part.
 
-### 9. On command window, Execute the following commands line by line immediately after No.8.
+### 9. On command window, To extract logs, execute the following commands line by line immediately after No.8.
 ```
 C:\working_directory> adb logcat -d -v time > log1.txt
 C:\working_directory> adb shell getprop > prop.txt
